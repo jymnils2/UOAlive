@@ -1,7 +1,7 @@
 # UOAlive
 Deposito de scrips en español de Razor Enhanced para el shard gratuito UOAlive
 
-En mi deseo de expandir la comunidad hispana de UO en general, he creado este repositorio de scrips
+En mi deseo de expandir la comunidad hispana de UO en general, he creado este repositorio de scripts
 que estan creados por una persona de habla hispana, soy ingeniero en sistemas asi que logro entender
 la dificultad que produce el tener que pensar en "objetos" para programar cosas sencillas de hacer
 en este hermoso juego que merece ser jugado por todas la generaciones. 
