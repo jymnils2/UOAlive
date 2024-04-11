@@ -10,8 +10,8 @@ razor-enhanced en vez de su version anterior Razor 1.6.x que viene con una simpl
 macros sin tener que estar pensando en objetos, pero que le vamos hacer si la vida te da verduras
 hay que comerlas sin disgusto.
 
-Los scrips aca almacenados fueron creados por mi en su totalidad a veces usando algunos segmentos de codigo
-aprendidos de otros scrips de uso publico en la comunidad UO inglesa, he tratado de hacer comentarios en 
+Los scripts aca almacenados fueron creados por mi en su totalidad a veces usando algunos segmentos de codigo
+aprendidos de otros scripts de uso publico en la comunidad UO inglesa, he tratado de hacer comentarios en 
 el codigo que sean lo suficientemente precisos de manera que el usuario normal pueda cambiarlos
 a su entorno de trabajo o servidor.
 
