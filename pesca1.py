@@ -15,7 +15,7 @@
 # consejos      ya que los peces y trofeos pesan mucho, es bueno andar con una pet de carga
 #               una llama o mejor aun una cucaracha para poder meter dentro lo que pesquemos
 #               la pesca desde los puertos o la tierra firme no crea moustruos que te ataquen
-#
+#               para subir la habilidad mas que 65 es mejor salir de las ciudades
 ##############################################################################
 
 from colors import colors
