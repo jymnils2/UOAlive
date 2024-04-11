@@ -3,6 +3,7 @@
 #              haber usado una vez el scrip pesca1 y tener exito en la pesca (animacion de pesca)
 #              colocar el serial de la caña de pesca en el scrip  *** mejorar esto
 #              ver "cosas que debes saber hacer"
+#              archivo color.py para que los mensajes se vean a colores
 # descripcion : realiza la actividad de pesca 10 veces en el mismo lugar 
 #               donde se realizo la pesca en el scrip pesca1
 #               el scrip se corta con un mensaje "Ya no hay peces" si es que
