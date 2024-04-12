@@ -18,8 +18,8 @@ a su entorno de trabajo o servidor.
 Vale la pena mencionar que la politica de skill gratuitos de UOAlive al mismo tiempo de su politica
 ANTI macreo de RECURSOS hace que un gran porcentajede scripts usuales no sirvan o simplemente sean ILEGALES
 y suceptibles de BANEO, tarea en la que los administradores del servidor UOALive son extremadamente eficientes
-asi que estan advertidos, los scrips creados por mi requieren de intervencion humana minima (presionar teclas F1, F2, etc)
-a excepcion de los scrips de entrenamiento de skills gratuitas y que estan permitidas por el TOS de UOAlive
+asi que estan advertidos, los scripts creados por mi requieren de intervencion humana minima (presionar teclas F1, F2, etc)
+a excepcion de los scripts de entrenamiento de skills gratuitas y que estan permitidas por el TOS de UOAlive
 para ser macreados sin temor a ningun castigo.
 
 ********************************** ENGLISH **********************************
