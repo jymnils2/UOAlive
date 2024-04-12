@@ -23,4 +23,11 @@ a excepcion de los scrips de entrenamiento de skills gratuitas y que estan permi
 para ser macreados sin temor a ningun castigo.
 
 
+Razor Enhanced Spanish script deposit for the free UOAlive shard https://uoalive.com/
+
+In my desire to expand the UO Hispanic community in general, I have created this repository of scripts that are created by a Spanish-speaking person, I am a systems engineer so I understand the difficulty of having to think in "objects" to program simple things to do in this beautiful game that deserves to be played by all generations. In fact, I still don't understand the decision of the UOAlive server administrators to use razor-enhanced instead of its previous version Razor 1.6.x, which comes with a simple way to create macros without having to think about objects, but what are we going to do? If life gives you vegetables you have to eat them without disgust.
+
+The scripts stored here were created by me in their entirety sometimes using some code segments learned from other scripts in public use in the English UO community, I have tried to make comments in the code that are precise enough so that the normal user you can change them to your work environment or server.
+
+It is worth mentioning that UOALive's free skill policy at the same time as its ANTI RESOURCE tampering policy makes a large percentage of common scripts useless or simply ILLEGAL and susceptible to BANNING, a task in which the administrators of the UOALive server are extremely efficient so be warned, the scripts created by me require minimal human intervention (pressing F1, F2 keys, etc.) with the exception of the free skills training scripts that are allowed by the UOAlive TOS to be created without fear to no punishment.
 
