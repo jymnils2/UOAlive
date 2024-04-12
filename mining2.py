@@ -14,6 +14,7 @@
 # consejos      usar los guantes de mining (premios BOD) o la picota de mining +10
 #               que se consigue en los quest iniciales para fundir minerales
 #               asi hay menos chance de fallar y perder la mitad de ellos.
+#               un escarabajo nivel 1 (sin entrenar) puede cargar casi 1500 stones de peso
 #               llevar al menos 3 picotas para reemplazar las que se usan
 #               siempre tener armas disponibles para defenderse de NPCs agresivos o elementales de metal
 #               usar joyeria y ropa que suba la fuerza (STR) para tener mas capacidad de carga
@@ -25,29 +26,25 @@
 ##############################################################################
 
 from colors import colors
-
 # ids de los diferentes montones de mineral
 # id 01   0x19B7
 # id 02   0x19B8
 # id 03   0x19B9
 # id 04   0x19BA
-oreid01 = 0x19B7
-oreid02 = 0x19B8
-oreid03 = 0x19B9
-oreid04 = 0x19BA
 # variables que se usaran
 pickaxeID = 0x0E86          #ID de las picotas
 pickaxeserial = 0
-escarabajo = 0x0011B6BC     # serial del escarabajo, pidamosle el serial al usuario
-woodID = 0x1BD7             # ID de la madera en tablas    la diferencia entre serial y id es que el
-                            # serial es unico por items pero el ID es igual para items con el
-                            # mismo grafico pero diferente color
+escarabajo = 0x00056F5E     # serial del escarabajo, pidamosle el serial al usuario
+oreid01 = 0x19B7            # ID de los montones de mineral   la diferencia entre serial y id es que el
+oreid02 = 0x19B8            # serial es unico por items pero el ID es igual para items con el
+oreid03 = 0x19B9            # mismo grafico pero diferente color
+oreid04 = 0x19BA
 prev_wood = 0  
 max_tries = 6
 mano = 0
 # creando los pesos para pasar los minerales al escarabajo
-max_weight = Player.MaxWeight
-pesomaximo = max_weight - 20
+peso_maximo = Player.MaxWeight
+pesomaximo = peso_maximo - 20
 # preguntando cual es nuestro animal de carga
 # escarabajo = Target.PromptTarget( 'cual es nuestro animal de carga?' )
 # mina minerales hasta estar pesados para traspasarlos al escarabajo
@@ -83,15 +80,13 @@ while True:
         while ore != None:
             Items.Move(ore.Serial, escarabajo, 0)
             Misc.Pause(1000)
-            # test = Items.FindBySerial(wood.Serial)
-            # Misc.SendMessage("Moviendo Mineral", 6)
             Player.HeadMessage( colors[ 'yellow' ], 'moviendo minerales')
             ore = Items.FindByID(oreid01, -1, Player.Backpack.Serial)
             max_tries = max_tries - 1
             if max_tries <= 0:
                 break
         max_tries = 6
-        # bloque 01 para 1 monton de mineral, hay 4 montones diferentes
+        # bloque 02 para 1 monton de mineral, hay 4 montones diferentes
         ore = Items.FindByID(oreid02, -1, Player.Backpack.Serial)
         while ore != None:
             Items.Move(ore.Serial, escarabajo, 0)
@@ -104,7 +99,7 @@ while True:
             if max_tries <= 0:
                 break
         max_tries = 6
-        # bloque 02 para 1 monton de mineral, hay 4 montones diferentes        
+        # bloque 03 para 1 monton de mineral, hay 4 montones diferentes        
         ore = Items.FindByID(oreid03, -1, Player.Backpack.Serial)
         while ore != None:
             Items.Move(ore.Serial, escarabajo, 0)
@@ -117,7 +112,7 @@ while True:
             if max_tries <= 0:
                 break
         max_tries = 6
-        # bloque 03 para 1 monton de mineral, hay 4 montones diferentes        
+        # bloque 04 para 1 monton de mineral, hay 4 montones diferentes        
         ore = Items.FindByID(oreid04, -1, Player.Backpack.Serial)
         while ore != None:
             Items.Move(ore.Serial, escarabajo, 0)
@@ -130,12 +125,11 @@ while True:
             if max_tries <= 0:
                 break
         max_tries = 6
-        # bloque 04 para 1 monton de mineral, hay 4 montones diferentes                
     # si vemos el mensaje de no hay mas metal, nos detenemos.    
     # there is no metal here to mine
     if Journal.Search('no metal here to mine'):
        Player.HeadMessage( colors[ 'red' ], 'Ya no mineral' )
-       Misc.SendMessage("ya no hay mineral - terminando script")
        break    
     else:
-        Misc.SendMessage("minando")    
+        Player.HeadMessage( colors[ 'cyan' ], 'Minando' )
+        
